@@ -1,0 +1,24 @@
+APP: Rerouting for escaping traffic jams
+
+AUDIENCE: Car owners
+
+ACCESS: Database from Government or Insurance companies
+
+Quantitative Questionnares
+	- what annoys you the most
+
+--------------------
+
+EVALUATING
+
+The app recognises if you are in a traffic jam and shows popup for questionnaire
+Qualitative
+	- suggesting features
+	- how to improve
+Questionnaire
+
+
+----------------------
+
+create a questionnaire for next lesson
+
