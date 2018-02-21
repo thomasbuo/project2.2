@@ -3,17 +3,22 @@ package objects;
 import java.awt.Point;
 import java.util.Vector;
 
+import javax.vecmath.Vector2d;
+
 public class Car {
-	public Point origin;
-	public Point destination;
-	public Vector currentLocation;
+	public Vector2d origin;
+	public final Vector2d destination;
+	public Vector2d currentLocation;
 	public int departureTime;
 	
 	//Constructor
-	public Car(Point origin, Point destination, Vector currentLocation, int departureTime) {
+	public Car(Vector2d origin, Vector2d destination, Vector2d currentLocation, int departureTime) {
 		this.origin = origin;
 		this.destination = destination;
 		this.currentLocation = currentLocation;
 		this.departureTime = departureTime;
 	}
+	
+	
+	
 }
