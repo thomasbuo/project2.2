@@ -1,0 +1,41 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{god0000his}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {God}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G1}
+  \strng{fullhash}{G1}
+  \field{labelyear}{0000}
+  \field{sortinit}{G}
+  \field{title}{His Holy Word}
+  \verb{url}
+  \verb lalala.com
+  \endverb
+  \field{year}{0000}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
