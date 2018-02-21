@@ -2,8 +2,11 @@ package gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.*;
+import java.awt.event.*;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
@@ -57,21 +60,56 @@ public class GraphicalInterface extends JFrame {
 		JPanel panel_5 = new JPanel();
 		tabbedPane.addTab("Signs", null, panel_5, null);
 		
-		JButton btnNewButton = new JButton("Load");
-		btnNewButton.setBounds(10, 55, 79, 23);
-		panel.add(btnNewButton);
+		JButton load_button = new JButton("Load");
+		load_button.setBounds(10, 55, 79, 23);
+		panel.add(load_button);
+		load_button.addActionListener(new LoadButton());
 		
-		JButton btnNewButton_1 = new JButton("Save");
-		btnNewButton_1.setBounds(95, 55, 79, 23);
-		panel.add(btnNewButton_1);
+		JButton save_button = new JButton("Save");
+		save_button.setBounds(95, 55, 79, 23);
+		panel.add(save_button);
 		
-		JButton btnNewButton_2 = new JButton("Reset");
-		btnNewButton_2.setBounds(49, 94, 89, 23);
-		panel.add(btnNewButton_2);
+		JButton reset_button = new JButton("Reset");
+		reset_button.setBounds(49, 94, 89, 23);
+		panel.add(reset_button);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(10, 22, 830, 491);
 		contentPane.add(panel_1);
+	}
+	
+	private class LoadButton implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+		JFrame frame2 = new JFrame("loading");
+		frame2.setVisible(true);
+		frame2.setSize(200, 200);
+		JLabel label = new JLabel("loading");
+		JPanel panel = new JPanel();
+		frame2.add(panel);
+		panel.add(label);
+			
+		}
+		
+	}
+	private class SaveButton implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			//do something
+			
+		}
+		
+	}
+	private class ResetButton implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			//do something
+			
+		}
+		
 	}
 
 	private class SwingAction extends AbstractAction {

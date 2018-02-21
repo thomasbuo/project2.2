@@ -8,6 +8,7 @@ import javax.vecmath.Vector2d;
 public class Car {
 	public Vector2d origin;
 	public Vector2d destination;
+	public final Vector2d destination;
 	public Vector2d currentLocation;
 	public int departureTime;
 	
@@ -18,4 +19,7 @@ public class Car {
 		this.currentLocation = currentLocation;
 		this.departureTime = departureTime;
 	}
+	
+	
+	
 }
