@@ -10,16 +10,7 @@ public class Core {
 		
 		GraphicalInterface graphical_interface = new GraphicalInterface();
 		graphical_interface.setVisible(true);
-	
-		StreetMap map = new StreetMap();
 		
-		map.addIntersection(new Intersection());
-		map.addIntersection(new Intersection());
-		map.addIntersection(new Intersection());
-
-		map.addConnection(2, 1, new Connection());
-		
-		System.out.println(map.getAdjacencyMatrix());
 	}
 }
 
